@@ -4,6 +4,9 @@ const port = process.env.PORT || 3000;
 
 const server = http.createServer(function (req, res) {
   res.writeHead(200, { "Content-Type": "application/json" });
+  console.log("FROM NODEJS APP");
+  console.info("FROM NODEJS INDO APP");
+  console.error("FROM NODEJS ERRO APP");
   res.end(JSON.stringify({ message: "Hello from Dockhand new regsi", port }));
 });
 
